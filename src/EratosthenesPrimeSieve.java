@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class EratosthenesPrimeSieve implements PrimeSieve {
     int obergrenze;
 
@@ -45,5 +47,15 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
             }
         }
     }
+
+    public void algorithmforPrimes(){
+
+    }
 }
+
+     
+
+
+
+
 
