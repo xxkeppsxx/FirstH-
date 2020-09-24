@@ -49,11 +49,22 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
     }
 
     public void algorithmforPrimes(){
+        ArrayList <Integer> primes = new ArrayList<>();
+        ArrayList <Integer> nonprimes = new ArrayList<>();
+
+        for(int i = 2; i<= obergrenze; i++){
+            if(isPrime(i)){
+                primes.add(i);
+            }
+            else{
+                nonprimes.add(i);
+            }
+        }
 
     }
 }
 
-     
+
 
 
 
