@@ -69,6 +69,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
                         System.out.println(i + " summe" + ":" + i + "=" + j +"+" + k);
 
                     }
+                    
                 }
             }
 
