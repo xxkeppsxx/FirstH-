@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class EratosthenesPrimeSieve implements PrimeSieve {
     int obergrenze;
@@ -48,19 +50,30 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
         }
     }
 
-    public void algorithmforPrimes(){
-        ArrayList <Integer> primes = new ArrayList<>();
-        ArrayList <Integer> nonprimes = new ArrayList<>();
-
-        for(int i = 2; i<= obergrenze; i++){
-            if(isPrime(i)){
+    public void algorithmforPrimes() {
+        ArrayList<Integer> primes = new ArrayList<>();
+        ArrayList<Integer> nature = new ArrayList<>();
+        for (int i = 2; i <= obergrenze; i++) {
+            if (isPrime(i)) {
                 primes.add(i);
+            } else if(!isPrime(i)) {
+                nature.add(i);
             }
-            else{
-                nonprimes.add(i);
-            }
+
         }
-        
+        for (int i: nature){
+
+            for(int j: primes){
+                for(int k:primes){
+                    if((k + j) == i){
+                        System.out.println(i + " summe" + ":" + i + "=" + j +"+" + k);
+
+                    }
+                }
+            }
+
+        }
+
 
     }
 }

@@ -3,6 +3,7 @@ public class main {
         EratosthenesPrimeSieve test = new EratosthenesPrimeSieve(10);
         test.isPrime(5);
         test.printPrimes();
+        test.algorithmforPrimes();
 
     }
 
