@@ -4,6 +4,7 @@ public class main {
         test.isPrime(5);
         test.printPrimes();
         test.algorithmforPrimes();
+        
 
     }
 

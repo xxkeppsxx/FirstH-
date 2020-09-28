@@ -58,7 +58,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
                 primes.add(i);
             } else if(!isPrime(i)) {
                 nature.add(i);
-                
+
             }
 
         }
